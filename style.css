@@ -1,0 +1,368 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #111111;
+    background-color: #ffffff;
+    line-height: 1.6;
+  }
+
+  .text-inout {
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .text-inout:hover {
+    color: #333;
+  }
+  
+  /* Layout principal */
+  .aplicativo {
+    width: 100%;
+    max-width: max-content;
+    height: 100%;
+    max-height: max-content;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cabeçalho */
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    color: #222;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Formulários */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size:small;
+    text-decoration: none;
+    color: #000000;
+    font-weight:600;
+    padding-top: 15px;
+
+  }
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size:x-large;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+
+  }
+
+  span {
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+  }
+
+  .label {
+    border-radius: 45px;
+  }
+  
+
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .form-description {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Botões */
+  
+  button {
+    padding: 1.3em 3em;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #233bc4;
+    box-shadow: 0px 15px 10px rgba(58, 46, 229, 0.4);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+  
+  /* Seções */
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .section-content {
+    margin-bottom: 15px;
+  }
+  
+  /* Indicadores de progresso e mensagens */
+  .status {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .status-success {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .status-error {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .status-info {
+    background-color: #17a2b8;
+    color: #fff;
+  }
+  
+  /* Layout do progresso */
+  .progress-bar {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 10px;
+  }
+  
+  .progress-bar-inner {
+    height: 100%;
+    background-color: #007bff;
+    width: 0%;
+    transition: width 0.4s ease;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-muted {
+    color: #6c757d;
+  }
+
+
+  /* From Uiverse.io by lenin55 */ 
+.cl-checkbox {
+    position: relative;
+    display: inline-block;
+   }
+   
+   /* Input */
+   .cl-checkbox > input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: -1;
+    position: absolute;
+    left: -10px;
+    top: -8px;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: none;
+    outline: none;
+    opacity: 0;
+    transform: scale(1);
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.2s;
+   }
+   
+   /* Span */
+   .cl-checkbox > span {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+   }
+   
+   /* Box */
+   .cl-checkbox > span::before {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 3px 11px 3px 1px;
+    border: solid 2px;
+    /* Safari */
+    border-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+    transition: border-color 0.2s, background-color 0.2s;
+   }
+   
+   /* Checkmark */
+   .cl-checkbox > span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    width: 10px;
+    height: 5px;
+    border: solid 2px transparent;
+    border-right: none;
+    border-top: none;
+    transform: translate(3px, 4px) rotate(-45deg);
+   }
+   
+   /* Checked, Indeterminate */
+   .cl-checkbox > input:checked,
+   .cl-checkbox > input:indeterminate {
+    background-color: #0a0187;
+   }
+   
+   .cl-checkbox > input:checked + span::before,
+   .cl-checkbox > input:indeterminate + span::before {
+    border-color: #011587;
+    background-color: #1a0187;
+   }
+   
+   .cl-checkbox > input:checked + span::after,
+   .cl-checkbox > input:indeterminate + span::after {
+    border-color: #fff;
+   }
+   
+   .cl-checkbox > input:indeterminate + span::after {
+    border-left: none;
+    transform: translate(4px, 3px);
+   }
+   
+   /* Hover, Focus */
+   .cl-checkbox:hover > input {
+    opacity: 0.04;
+   }
+   
+   .cl-checkbox > input:focus {
+    opacity: 0.12;
+   }
+   
+   .cl-checkbox:hover > input:focus {
+    opacity: 0.16;
+   }
+   
+   /* Active */
+   .cl-checkbox > input:active {
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0s, opacity 0s;
+   }
+   
+   .cl-checkbox > input:active + span::before {
+    border-color: #8d85b8;
+   }
+   
+   .cl-checkbox > input:checked:active + span::before {
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.6);
+   }
+   
+   /* Disabled */
+   .cl-checkbox > input:disabled {
+    opacity: 0;
+   }
+   
+   .cl-checkbox > input:disabled + span {
+    color: rgba(0, 0, 0, 0.38);
+    cursor: initial;
+   }
+   
+   .cl-checkbox > input:disabled + span::before {
+    border-color: currentColor;
+   }
+   
+   .cl-checkbox > input:checked:disabled + span::before,
+   .cl-checkbox > input:indeterminate:disabled + span::before {
+    border-color: transparent;
+    background-color: currentColor;
+   }
+   
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .section-title {
+      font-size: 1.3rem;
+    }
+  }
+  
