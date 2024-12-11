@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <p></p>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./renderer.js"></script>
+</head>
+<body>
+    <div class="aplicativo" id="app">
+        <h1>YouTube Downloader</h1>
+        
+        <div class="form-group">
+            <label for="output-directory">
+                <span>Escolha a pasta de destino:</span>
+            </label>
+            <input type="text" id="output-directory" placeholder="Pasta de destino" readonly>
+            <p>
+            <button id="choose-folder">Escolher</button></p>
+        </div>
+        <div class="form-group">
+            <label for="url">
+                <span>Insira o link do vídeo:</span>
+            </label>
+            <input  type="text" id="url" placeholder="URL do vídeo">
+        </div>
+        <div class="form-group">
+            <label class="cl-checkbox">
+                <input  type="checkbox" id="download-thumbnail">
+                <span>Baixar Thumbnail </span>
+                
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="cl-checkbox">
+                <input type="checkbox" id="convert-to-mp3">
+                <span>
+                Converter para MP3</span>
+            </label>
+        </div>
+        <button class="text" id="download-btn">Iniciar Download</button>
+        <div id="spinner" class="hidden"><p>Carregando...</p></div>
+        <div id="status-bar" class="hidden">
+            <p id="status-message">Status: Aguardando ação...</p>
+        </div>
+    </div>
+</body>
+</html>
