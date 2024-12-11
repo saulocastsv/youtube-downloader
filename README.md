@@ -2,10 +2,8 @@
 
 Uma aplicação poderosa para download de vídeos do YouTube, conversão para MP3 e download da thumbnail, desenvolvida com **Python**, **Electron**, **HTML**, e **JavaScript**.
 
-![YouTube Downloader Preview]([https://via.placeholder.com/800x400](https://ibb.co/LhPXkD3
-https://ibb.co/ft9bypL
-https://ibb.co/Hqsp4f6
-https://ibb.co/j3685Gx)) <!-- Adicione um link para uma captura de tela do seu programa -->
+![YouTube Downloader Preview]((https://ibb.co/LhPXkD3
+) <!-- Adicione um link para uma captura de tela do seu programa -->
 
 ---
 
