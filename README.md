@@ -1,106 +1,100 @@
-# YouTube Downloader - README
+# YouTube Downloader
 
-## Descrição
+Uma aplicação poderosa para download de vídeos do YouTube, conversão para MP3 e download da thumbnail, desenvolvida com **Python**, **Electron**, **HTML**, e **JavaScript**.
 
-Este é um programa simples em Python que utiliza a biblioteca `tkinter` para criar uma interface gráfica (GUI) para o download de vídeos do YouTube. O aplicativo permite que o usuário forneça até 5 links de vídeos, escolha uma pasta para salvar os downloads e opte por converter os vídeos para o formato MP3.
+![YouTube Downloader Preview](https://via.placeholder.com/800x400) <!-- Adicione um link para uma captura de tela do seu programa -->
 
-## Funcionalidades
+---
 
-- Baixar vídeos do YouTube diretamente para uma pasta especificada pelo usuário.
-- Converter vídeos para MP3 durante o processo de download, se solicitado.
-- Interface gráfica com o Tkinter.
-- Suporte para múltiplos links (até 5 links por vez).
-- Escolher o diretório onde os vídeos serão salvos.
+## **Recursos**
 
-## Pré-requisitos
+- 📥 **Baixar Vídeos do YouTube**: Download rápido e fácil de vídeos em alta qualidade.
+- 🎵 **Converter para MP3**: Extraia o áudio do vídeo para arquivos MP3.
+- 🖼️ **Download da Thumbnail**: Baixe a imagem de capa do vídeo.
+- 💻 **Interface Gráfica Elegante**: Desenvolvido com Electron para uma experiência amigável.
 
-Antes de executar o programa, você precisa instalar as dependências necessárias:
+---
 
-## # Como Usar
+## **Pré-requisitos**
 
-## Instalação do Tkinter
+Antes de começar, certifique-se de ter os seguintes itens instalados no seu computador:
 
-A biblioteca `tkinter` geralmente já vem instalada com o Python, mas caso não esteja presente, você pode instalá-la utilizando o seguinte comando (em sistemas Linux):
+- [Node.js](https://nodejs.org) (v14 ou superior)
+- [Python](https://www.python.org/downloads/) (v3.7 ou superior)
+- Gerenciador de pacotes `pip` para Python
+- FFmpeg (para conversão de áudio e vídeo) [Instruções de instalação](https://ffmpeg.org/download.html)
 
-```bash
-sudo apt-get install python3-tk
-```
+---
 
-1. **Python** (versão 3.6 ou superior).
-2. **Pacotes Python**:
-   - `yt-dlp`: Biblioteca para download de vídeos do YouTube.
-   - `tkinter`: Biblioteca padrão para interfaces gráficas (geralmente já instalada com o Python).
-  
-     
+## **Instalação**
 
-### Instalação das dependências
+### 1. Clone este repositório:
 
-Para instalar as dependências, execute os seguintes comandos no terminal ou prompt de comando:
 
-```bash
-pip install yt-dlp
-```
+- git clone https://github.com/seu-usuario/youtube-downloader.git
+cd youtube-downloader
 
-### Abrir o aplicativo:
+2. Instale as dependências do projeto:
+Backend (Python): pip install -r requirements.txt
 
-- Execute o código Python para abrir a aplicação gráfica. O código pode ser executado diretamente com o Python:
+- Frontend (Electron): npm install
+- 3. Configure o FFmpeg:
+Certifique-se de que o FFmpeg esteja instalado no sistema e acessível via terminal. Teste com o comando: ffmpeg -version
 
-```bash
-python3 youtube_downloader.py
-```
-### Configuração inicial:
+# Uso
 
-- Ao abrir o aplicativo, você verá a interface gráfica com os seguintes campos:
+- 1. Iniciar o programa:
+Execute o aplicativo com o comando: npm start
 
--Quantos links deseja baixar?: Escolha o número de vídeos (máximo 5).
+# 2. Funcionalidades disponíveis:
 
--Pasta para salvar os downloads: Clique em "Escolher pasta onde salvar" para selecionar o diretório onde os vídeos serão armazenados.
+Insira o URL do vídeo no campo indicado.
+Escolha entre as opções de download (Vídeo, MP3 ou Thumbnail).
+Clique no botão correspondente para iniciar o download.
 
-### Adicionar links:
+# Build (Gerar Executável)
+Para distribuir o programa como um executável, siga estas etapas:
 
--Após clicar em "Confirmar", você verá campos para inserir até 5 links de vídeos do YouTube.
--Para cada link, você pode marcar a opção "Converter para MP3" se desejar que o vídeo seja convertido após o download.
+Instale o Electron Builder: npm install --save-dev electron-builder
 
-### Iniciar o download:
+# Crie o executável: npm run dist
+Os arquivos de instalação serão gerados na pasta dist/.
 
--Clique no botão "Iniciar Download" para começar o processo de download. Durante o processo, será exibido um spinner e o status da aplicação.
+Contribuição
+Contribuições são bem-vindas! Siga estas etapas para contribuir:
 
-### Finalização:
+Faça um fork do projeto.
+Crie uma nova branch para suas alterações:
+bash
+Copiar código
+git checkout -b minha-feature
+Commit suas alterações:
+bash
+Copiar código
+git commit -m "Adicionei uma nova funcionalidade"
+Faça o push para o seu repositório:
+bash
+Copiar código
+git push origin minha-feature
+Abra um Pull Request neste repositório.
+Licença
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
 
--Quando todos os downloads forem concluídos, você receberá uma mensagem informando que os downloads foram concluídos com sucesso.
+Capturas de Tela
+Adicione capturas de tela para mostrar a interface e as funcionalidades do programa.
 
-### Possíveis Problemas e Soluções
+Contato
+Criado por Seu Nome. Entre em contato em caso de dúvidas ou sugestões!
 
-### Erro ao iniciar o download:
+yaml
+Copiar código
 
--Mensagem de erro: "Erro ao processar o vídeo [número]: [detalhes do erro]"
--Solução: Isso pode ocorrer por diversos motivos, como um link inválido ou problemas de conexão. Verifique se o link do YouTube está correto e se a conexão com a internet está funcionando.
--Não consigo escolher o diretório de saída:
--Mensagem de erro: "Erro ao acessar a pasta de saída."
--Solução: Verifique as permissões do diretório escolhido. O programa precisa de permissão de gravação para salvar os vídeos.
--O programa fica "travado" durante o download:
--Solução: O download ocorre em uma thread separada para evitar que a interface gráfica congele. Se o programa estiver demorando muito, pode ser um problema de rede ou do próprio YouTube (vídeos muito grandes ou servidores -lentos).
+---
 
-### Problema com a conversão para MP3:
+### **Como Personalizar**
+1. **Imagens:** Substitua o placeholder para capturas de tela com imagens reais do seu programa.
+2. **Repositório:** Atualize os links para refletir o nome do repositório e o seu usuário no GitHub.
+3. **Licença:** Certifique-se de adicionar o arquivo `LICENSE` ao repositório, caso opte por incluir uma licença.
 
-Mensagem de erro: "Erro ao converter para MP3."
+Se precisar de ajuda para ajustar ou expandir o README, avise!
 
--Solução: Verifique se o FFmpeg está instalado corretamente em seu sistema. O yt-dlp usa o FFmpeg para converter vídeos para áudio.
-Você pode instalá-lo via site oficial do FFmpeg ou utilizando um gerenciador de pacotes.
-
-### O aplicativo não abre:
-
--Solução: Certifique-se de que o Python e as dependências necessárias estejam corretamente instalados. Caso o tkinter não esteja instalado, siga as instruções na seção de pré-requisitos.
-
-### Contribuição
--Se você quiser contribuir com melhorias para o projeto, sinta-se à vontade para fazer um fork deste repositório, corrigir problemas ou adicionar novas funcionalidades. Para contribuir, siga os seguintes passos:
-
-### Faça um fork deste repositório.
-
--Crie uma branch para a sua funcionalidade (git checkout -b nova-funcionalidade).
--Faça commit das suas alterações (git commit -am 'Adiciona nova funcionalidade').
--Envie para o repositório remoto (git push origin nova-funcionalidade).
--Crie um pull request.
-
-### Licença
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
