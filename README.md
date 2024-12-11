@@ -63,38 +63,34 @@ Os arquivos de instalação serão gerados na pasta dist/.
 Contribuição
 Contribuições são bem-vindas! Siga estas etapas para contribuir:
 
-Faça um fork do projeto.
-Crie uma nova branch para suas alterações:
-bash
-Copiar código
-git checkout -b minha-feature
-Commit suas alterações:
-bash
-Copiar código
-git commit -m "Adicionei uma nova funcionalidade"
-Faça o push para o seu repositório:
-bash
-Copiar código
-git push origin minha-feature
-Abra um Pull Request neste repositório.
-Licença
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
+# Faça um fork do projeto.
 
-Capturas de Tela
-Adicione capturas de tela para mostrar a interface e as funcionalidades do programa.
+- Crie uma nova branch para suas alterações: git checkout -b minha-feature
 
-Contato
-Criado por Seu Nome. Entre em contato em caso de dúvidas ou sugestões!
+- Commit suas alterações: git commit -m "Adicionei uma nova funcionalidade"
+- 
+# Faça o push para o seu repositório: git push origin minha-feature
 
-yaml
-Copiar código
+#  Abra um Pull Request neste repositório.
+
+# Licença
+- Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
+
+# Capturas de Tela
+
+- Adicione capturas de tela para mostrar a interface e as funcionalidades do programa.
+
+# Contato
+Criado por Saulo Castro. 
+Entre em contato em caso de dúvidas ou sugestões!
 
 ---
 
 ### **Como Personalizar**
+
 1. **Imagens:** Substitua o placeholder para capturas de tela com imagens reais do seu programa.
 2. **Repositório:** Atualize os links para refletir o nome do repositório e o seu usuário no GitHub.
 3. **Licença:** Certifique-se de adicionar o arquivo `LICENSE` ao repositório, caso opte por incluir uma licença.
 
-Se precisar de ajuda para ajustar ou expandir o README, avise!
+# Se precisar de ajuda para ajustar ou expandir o README, avise!
 
