@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "npx install -g libnss3 && electron .",
     "dist": "electron-builder"
+    
   },
   "build": {
     "appId": "com.downloadyoutube.meuapp",
@@ -33,4 +34,5 @@
     "electron": "^23.1.0",
     "electron-builder": "^24.0.0"
   }
+  
 }
